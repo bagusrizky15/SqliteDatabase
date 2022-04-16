@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         insertData = findViewById(R.id.insertData);
 
         insertData.setOnClickListener(v -> {
-            databaseHelper.insertData(new Data("Hevin", "Cool"));
+            String getTitle = title.getText().toString();
+            String getMessage = message.getText().toString();
+            databaseHelper.insertData(new Data(getTitle, getMessage));
         });
     }
 }
