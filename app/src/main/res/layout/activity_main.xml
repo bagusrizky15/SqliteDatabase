@@ -26,8 +26,14 @@
         app:layout_constraintEnd_toEndOf="parent"/>
     
     <Button
-        android:layout_width=""
-        android:layout_height=""
+        android:id="@+id/insertData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Insert Data"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@+id/message"/>
         
 
 </androidx.constraintlayout.widget.ConstraintLayout>
